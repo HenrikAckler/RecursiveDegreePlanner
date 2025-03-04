@@ -29,3 +29,10 @@ First off, the problem is of rather limited scope, as the amount of courses avai
 This leads me to think on memory usage, but while this program could be coded with near zero auxilary space, the frankly miniscule scope makes me not too concerned. I would instead prefer the code simplicity allowed by taking up a bit more memory.
 
 As such, I have settled on an approach using "prefilters" and "priority". All courses will be assigned various attributes (such as blacklisted, mandatory, preferred, etc), and upon each new schedule generation will be sorted. The schedule will then be loaded based on priority. This, in theory, allows the majority of operations to process in `O(n)` time, with a single `O(n^2)` sort operation done at creation.
+
+## Credit
+
+### minimal-json
+[Minimal-json](https://github.com/ralfstx/minimal-json/tree/master) will be/was used in this project for parsing and storing json objects. I have stripped down the project a bit so it integrates more directly, but huge thanks to ralfstx for this code. A copy of the original license is included in the [LICENSE](./LICENSE) file.
+
+*Please note: I am quite new to working with other's code, I have checked the lisences and given credit appropriately to the best of my knowledge, but please let me know if something is done improperly.*
