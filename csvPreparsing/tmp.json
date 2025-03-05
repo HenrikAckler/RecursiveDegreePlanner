@@ -1,0 +1,30 @@
+{
+   "name": "John Doe",
+   "vehicles": [
+      {
+         "make": "Ford",
+         "model": "F-150",
+         "color": "white"
+      }, 
+      {
+         "make": "Toyota",
+         "model": "Camry",
+         "color": "red"
+      }
+   ],
+   "married": false,
+   "previous_customer": true,
+   "known_associates": ["Jim", "jill"],
+   "notes": null,
+   "Cats": [
+   {
+      "name": "iris",
+      "braincells": [3, 2]
+   }
+   {
+      "name": "tony",
+      "braincells": "at least 20"
+   }
+   ]
+}
+
